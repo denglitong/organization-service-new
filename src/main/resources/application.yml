@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: organizationservice
+  profiles:
+    active: default
+  cloud:
+    config:
+      enabled: true
+  config:
+    # 指定Spring Cloud Config服务器的位置
+    import: "optional:configserver:http://configurationservice:8888"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+eureka:
+  instance:
+    # 注册服务的IP，而不是服务器名称
+    prefer-ip-address: true
+  client:
+    # 向Eureka注册服务
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      # Eureka服务的位置
+      defaultZone: http://eurekaservice:8761/eureka/
