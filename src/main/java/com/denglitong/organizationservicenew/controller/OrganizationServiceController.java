@@ -1,7 +1,7 @@
-package com.denglitong.organizationservice.controller;
+package com.denglitong.organizationservicenew.controller;
 
-import com.denglitong.organizationservice.model.Organization;
-import com.denglitong.organizationservice.service.OrganizationService;
+import com.denglitong.organizationservicenew.model.Organization;
+import com.denglitong.organizationservicenew.service.OrganizationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

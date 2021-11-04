@@ -1,6 +1,6 @@
-package com.denglitong.organizationservice.repository;
+package com.denglitong.organizationservicenew.repository;
 
-import com.denglitong.organizationservice.model.Organization;
+import com.denglitong.organizationservicenew.model.Organization;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

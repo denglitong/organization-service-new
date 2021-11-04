@@ -3,8 +3,8 @@ FROM openjdk:8-jdk-alpine
 RUN apk update && apk upgrade && apk add netcat-openbsd
 # 使用Eureka服务发现之后可无需bind-tools
 #&& apk add bind-tools
-RUN mkdir -p /usr/local/organizationservice
-ADD @project.build.finalName@.jar /usr/local/organizationservice/
+RUN mkdir -p /usr/local/organizationservicenew
+ADD @project.build.finalName@.jar /usr/local/organizationservicenew/
 ADD run.sh run.sh
 RUN chmod +x run.sh
 CMD ./run.sh

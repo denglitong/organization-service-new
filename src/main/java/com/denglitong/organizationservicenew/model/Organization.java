@@ -1,4 +1,4 @@
-package com.denglitong.organizationservice.model;
+package com.denglitong.organizationservicenew.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

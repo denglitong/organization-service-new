@@ -1,7 +1,7 @@
-package com.denglitong.organizationservice.service;
+package com.denglitong.organizationservicenew.service;
 
-import com.denglitong.organizationservice.model.Organization;
-import com.denglitong.organizationservice.repository.OrganizationRepository;
+import com.denglitong.organizationservicenew.model.Organization;
+import com.denglitong.organizationservicenew.repository.OrganizationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +22,9 @@ public class OrganizationService {
     }
 
     public Organization getOrg(String organizationId) {
-        return orgRepository.findByOrganizationId(organizationId);
+        Organization org = orgRepository.findByOrganizationId(organizationId);
+        org.setContactName("NEW::"+org.getContactName());
+        return org;
     }
 
     public void saveOrg(Organization org) {

@@ -46,10 +46,10 @@ services:
       CONFIGSERVER_PORT: "8888"
       DATABASESERVER_PORT: "5432"
       ENCRYPT_KEY: "IMSYMMETRIC"
-  organizationservice2:
-    image: denglitong/organization-service:chapter4
+  organizationservicenew:
+    image: denglitong/organization-service-new:chapter6
     ports:
-      - "8086:8086"
+      - "8087:8087"
     environment:
       PROFILE: "default"
       SERVER_PORT: "8085"

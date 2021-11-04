@@ -26,4 +26,4 @@ java -Djava.security.egd=file:/dev/./urandom \
      -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI \
      -Dspring.cloud.config.uri=$CONFIGSERVER_URI \
      -Dspring.profiles.active=$PROFILE \
-     -jar /usr/local/organizationservice/@project.build.finalName@.jar
+     -jar /usr/local/organizationservicenew/@project.build.finalName@.jar
